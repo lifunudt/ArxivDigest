@@ -21,7 +21,7 @@ threshold: 7
 # This can be empty, which just return a full list of papers with no judgement or filtering,
 # in whatever order arXiv responds with.
 interest: |
-  1. Large language model pretraining and finetunings
-  2. Multimodal machine learning
+  1. Large language model pretraining and finetunings, applications
+  2. robotic, agents
   3. Do not care about specific application, for example, information extraction, summarization, etc.
   4. Not interested in paper focus on specific languages, e.g., Arabic, Chinese, etc.
