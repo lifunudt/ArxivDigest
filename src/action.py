@@ -284,7 +284,9 @@ if __name__ == "__main__":
     if "OPENAI_API_KEY" not in os.environ:
         raise RuntimeError("No openai api key found")
     openai.api_key = os.environ.get("OPENAI_API_KEY")
-
+    if "OPENAI_API_BASE" not in os.environ:
+        raise RuntimeError("No openai api base found")
+    openai.api_base = os.environ.get("OPENAI_API_BASE")
     topic = config["topic"]
     categories = config["categories"]
     from_email = os.environ.get("FROM_EMAIL")
